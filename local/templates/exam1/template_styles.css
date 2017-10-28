@@ -1,0 +1,6 @@
+.side-block .red {
+ background: linear-gradient(#fda3a3, #ff0000) !important;
+}
+.side-block .green {
+ background: linear-gradient(#e2ffe7, #00ff43) !important;
+}
