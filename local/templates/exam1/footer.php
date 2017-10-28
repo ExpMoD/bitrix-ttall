@@ -4,35 +4,26 @@
 <!-- /content -->
 <!-- side -->
 <div class="side">
-    <!-- side menu -->
-    <div class="side-block side-menu">
-        <div class="title-block">Навигация</div>
-        <div class="menu-block">
-            <ul>
-                <li><a href="">Кухни</a>
-                </li>
-                <li><a href="">Гарнитуры</a>
-                </li>
-                <li class="selected">
-                    <a href="">Спальни</a>
-                </li>
-                <li>
-                    <a href="">Шкафы</a>
-                </li>
-                <li><a href="">Столы</a>
-                </li>
-                <li><a href="">Стулья</a>
-                </li>
-                <li>
-                    <a href="">Прихожие</a>
-                </li>
-                <li><a href="">Диваны</a>
-                </li>
-                <li><a href="">Кресла</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+	<!-- side menu -->
+    <?$APPLICATION->IncludeComponent(
+        "bitrix:menu",
+        "left",
+        array(
+            "ALLOW_MULTI_SELECT" => "N",
+            "CHILD_MENU_TYPE" => "left",
+            "DELAY" => "N",
+            "MAX_LEVEL" => "1",
+            "MENU_CACHE_GET_VARS" => array(
+            ),
+            "MENU_CACHE_TIME" => "3600",
+            "MENU_CACHE_TYPE" => "N",
+            "MENU_CACHE_USE_GROUPS" => "Y",
+            "ROOT_MENU_TYPE" => "left",
+            "USE_EXT" => "Y",
+            "COMPONENT_TEMPLATE" => "left"
+        ),
+        false
+    );?>
     <!-- /side menu -->
     <!-- side anonse -->
     <div class="side-block side-anonse">
