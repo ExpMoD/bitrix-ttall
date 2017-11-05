@@ -10,4 +10,3 @@ foreach ($arResult["ITEMS"] as $key => $arItem) {
     }
 }
 
-return $arResult;
